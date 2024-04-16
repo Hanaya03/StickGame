@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChadController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    private float attackCoolDown = 2f;
+private float attackCoolDown = 2f;
     private float jumpForce = 2f;
     private float coolDownEnd;
     private Collider2D[] colliders = new Collider2D[2];
@@ -66,5 +66,5 @@ public class ChadController : MonoBehaviour
     void getTouchingColliders()
     {
         numOfColliders = attackCollider.OverlapCollider(new ContactFilter2D(), colliders);
-    }
+    }  
 }
